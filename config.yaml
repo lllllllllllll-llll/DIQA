@@ -1,0 +1,9 @@
+LIVE:
+  im_dir: D:/0datasets/LIVE/
+  ref_dir: D:/0datasets/LIVE/refimgs/
+
+patch_size: 112
+stride: 80
+
+train_ratio: 0.8
+test_ratio: 0.2
