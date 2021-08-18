@@ -48,7 +48,7 @@ def CropPatches(image, patch_size=112, stride=80):
 
 def errormap_process(patch, patch_ref):
     p = 0.2
-    errormap = np.abs(patch_ref.numpy(), patch.numpy())
+    errormap = np.abs(patch_ref.numpy() - patch.numpy())
     errormap = np.power(errormap, p)
     errormap = torch.from_numpy(errormap)
     errormap = errormap.unsqueeze(0)
